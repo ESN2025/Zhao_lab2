@@ -13,6 +13,7 @@ L'architecture sous Platform Designer (QSYS) est donc la suivante :
 
 ## Quartus
 Dans Quartus, nous avons tout d’abord écrit le composant bcd.vhd, utilisé pour afficher un nombre binaire de 4 bits sur un afficheur 7 segments. Ensuite, nous avons rédigé le fichier de haut niveau count.vhd, permettant de relier les composants créés dans QSYS au bloc BCD7SEG via des signaux. Par la suite, nous avons utilisé l’outil Pin Planner pour effectuer l’attribution des broches. Enfin, après une compilation complète du design, l’architecture peut être programmée sur la carte de développement.
+![alt text](image/2.png)
 
 ## Nios-II
 À l’aide du terminal Nios II, nous commençons par exécuter la commande suivante pour générer le fichier BSP (Board Support Package) :  
@@ -27,6 +28,7 @@ Le fichier timer.c implémente un compteur piloté par un timer, lequel génère
 De plus, j’ai ajouté une fonctionnalité permettant de modifier la vitesse du compteur en modifiant directement les registres periodl et periodh du timer en langage C. Cette fonctionnalité est mise en œuvre grâce aux macros IOWR_ALTERA_AVALON_TIMER_PERIODL et IOWR_ALTERA_AVALON_TIMER_PERIODH.
 ## Résultats
 
+https://github.com/user-attachments/assets/2cf407dc-8483-4b03-a847-a54d347fa558
 
 ## Conclusion
 Grâce à ce projet, nous avons approfondi notre compréhension du fonctionnement des afficheurs numériques et maîtrisé le processus de développement sur FPGA et NIOS II. Nous nous sommes également familiarisés avec l’utilisation des timers, des interruptions et la construction de systèmes QSYS. Dans la partie logicielle, nous avons appris à convertir des nombres décimaux en codes BCD et à implémenter des délais, tandis que dans la partie matérielle, nous avons acquis les compétences nécessaires pour afficher des nombres binaires sur des afficheurs numériques.
