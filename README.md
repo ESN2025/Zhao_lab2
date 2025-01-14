@@ -13,6 +13,7 @@ L'architecture sous Platform Designer (QSYS) est donc la suivante :
 
 ## Quartus
 Dans Quartus, nous avons tout d’abord écrit le composant bcd.vhd, utilisé pour afficher un nombre binaire de 4 bits sur un afficheur 7 segments. Ensuite, nous avons rédigé le fichier de haut niveau count.vhd, permettant de relier les composants créés dans QSYS au bloc BCD7SEG via des signaux. Par la suite, nous avons utilisé l’outil Pin Planner pour effectuer l’attribution des broches. Enfin, après une compilation complète du design, l’architecture peut être programmée sur la carte de développement.
+![alt text](image/2.png)
 
 ## Nios-II
 À l’aide du terminal Nios II, nous commençons par exécuter la commande suivante pour générer le fichier BSP (Board Support Package) :  
